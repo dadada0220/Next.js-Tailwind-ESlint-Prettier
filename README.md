@@ -52,8 +52,8 @@ npm run dev
 
 ## 参考資料
 
-全体構成の参考記事
+全体構成の参考記事  
 https://zenn.dev/rh820/articles/1e62510776221e
 
-コンポーネント設計の参考記事
+コンポーネント設計の参考記事  
 https://zenn.dev/yodaka/articles/eca2d4bf552aeb
