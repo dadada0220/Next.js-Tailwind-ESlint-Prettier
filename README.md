@@ -5,9 +5,9 @@
 ## 環境情報
 
 - テスト環境
-  - https://dev.xxx.com
+  - https://dev.domain.com
 - 本番環境
-  - https://xxx.com
+  - https://domain.com
 
 
 
