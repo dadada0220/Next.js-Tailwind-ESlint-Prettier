@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Meta pageTitle='トップページ' />
-      <main className='bg-theme-100 p-8'>
-        <h1>APP</h1>
+      <main className='p-8'>
+        <h1 className='bg-white'>APP</h1>
         <p className='ex1 mt-4 flex-0'>ex1</p>
         <Link
           href=''

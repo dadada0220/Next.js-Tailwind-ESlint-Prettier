@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss';
 
+const colors = require('tailwindcss/colors');
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,28 +20,34 @@ const config: Config = {
     },
   ],
   theme: {
-    extend: {
-      /**
-       * カラーを定義
-       * ※Tailwindデフォルトカラーは使用しないで、ここで定義されたカラーのみ使用する
-       * @example
-       * `DEFAULT`：`text-theme`や`text-alert`で呼び出す
-       * それ以外：`text-theme-500`や`text-alert-bg`で呼び出す
-       */
-      colors: {
-        alert: {
-          bg: '#FFEBEE',
-          DEFAULT: '#C62828',
-        },
-        theme: {
-          100: '#F5F5F5',
-          // 200: '#E8E8E8',
-          300: '#BBB',
-          // 400: '#777',
-          500: '#444',
-          DEFAULT: '#272727',
-        },
+    /**
+     * カラーを定義
+     * ※Tailwindデフォルトカラーは使用しないで、ここで定義されたカラーのみ使用する
+     * @example
+     * `DEFAULT`：`text-gray`や`text-alert`で呼び出す
+     * それ以外：`text-gray-500`や`text-alert-100`で呼び出す
+     */
+    colors: {
+      alert: {
+        100: '#FFEBEE',
+        DEFAULT: '#C62828',
       },
+      black: '#111',
+      current: 'currentColor',
+      gray: {
+        100: '#F5F5F5',
+        200: '#E8E8E8',
+        300: '#BBB',
+        400: '#777',
+        500: '#444',
+        DEFAULT: '#272727',
+      },
+      primary: {
+        100: '#E5F7FF',
+        DEFAULT: '#20A9E7',
+      },
+      transparent: 'transparent',
+      white: '#FFF',
     },
   },
 };
