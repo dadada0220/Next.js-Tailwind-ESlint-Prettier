@@ -1,7 +1,11 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   plugins: [
     require('@tailwindcss/forms'),
     function ({ addUtilities }) {
@@ -19,8 +23,8 @@ const config: Config = {
        * カラーを定義
        * ※Tailwindデフォルトカラーは使用しないで、ここで定義されたカラーのみ使用する
        * @example
-       * `DEFAULT`：`text-base`や`text-alert`で呼び出す
-       * それ以外：`text-base-500`や`text-alert-bg`で呼び出す
+       * `DEFAULT`：`text-theme`や`text-alert`で呼び出す
+       * それ以外：`text-theme-500`や`text-alert-bg`で呼び出す
        */
       colors: {
         alert: {
